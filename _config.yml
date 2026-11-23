@@ -7,35 +7,35 @@
 # =====================================================================
 
 # --- Identité du site ------------------------------------------------
-title: "Prénom Nom"                       # nom affiché dans la barre du haut
-description: "Portfolio d'élève ingénieur·e — projets, documentation et journal de bord"
+title: "Emrick PETIT"                       # nom affiché dans la barre du haut
+description: "Portfolio d'Emrick PETIT - Étudiant de 2ème année en école d'ingénieur"
 lang: fr
-couleur: rouge                            # rouge, bleu, vert, violet, orange, turquoise, rose, gris
+couleur: turquoise                            # rouge, bleu, vert, violet, orange, turquoise, rose, gris
                                           # ou un code entre guillemets : "#0057b8" (partie 10 du guide)
 
 # --- Adresse du site -------------------------------------------------
 # Cas 1 : ton dépôt s'appelle  pseudo.github.io  -> baseurl: ""
 # Cas 2 : ton dépôt s'appelle  portfolio         -> baseurl: "/portfolio"
 url: "https://pseudo.github.io"           # remplace "pseudo" par ton identifiant GitHub
-baseurl: ""
+baseurl: "/portfolio"
 
 # --- Toi ---------------------------------------------------------------
 author:
-  name: "Prénom Nom"
-  avatar: "/assets/images/avatar.svg"     # remplace par ta photo (carrée, ~400x400 px)
-  bio: "Élève ingénieur·e à UniLaSalle Amiens, passionné·e de prototypage."
-  formation: "I1 — UniLaSalle Amiens"
+  name: "Emrick PETIT"
+  avatar: "assets/images/img_profil.jpg"     # remplace par ta photo (carrée, ~400x400 px)
+  bio: "Étudiant ingénieur à UniLaSalle Amiens"
+  formation: "I2 — UniLaSalle Amiens"
   localisation: "Amiens"
   links:                                  # icônes : https://lucide.dev/icons/
     - label: "GitHub"
       icon: "github"
-      url: "https://github.com/pseudo"
+      url: "https://github.com/Titep01"
     - label: "LinkedIn"
       icon: "linkedin"
-      url: "https://www.linkedin.com/in/pseudo"
+      url: "https://www.linkedin.com/in/emrick-petit-137770356/"
     - label: "E-mail"
       icon: "mail"
-      url: "mailto:prenom.nom@etu.unilasalle.fr"
+      url: "mailto:emrick.p2007@gmail.com"
 
 # --- Thème (ne pas modifier sauf consigne de l'enseignant) -------------
 remote_theme: Makerspace-Amiens/portfolio-theme@v26.11.16-02
