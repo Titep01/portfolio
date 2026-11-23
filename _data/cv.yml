@@ -11,9 +11,21 @@ sections:
     icon: graduation-cap
     elements:
       - periode: "2026 — aujourd'hui"
-        titre: "Cycle ingénieur — I1"
+        titre: "Cycle ingénieur — I2"
         organisme: "UniLaSalle Amiens"
         lieu: "Amiens"
+        description: |
+          - Électronique théorique et pratique
+          - Mathématiques
+          - Microcontôleur et robotique mobile
+          - Prototypage et gestion de projets
+      - periode: "2025"
+        titre: "Baccalauréat général"
+        organisme: "Cité Scolaire Intertationale Ferney-Voltaire - Site Saint-Genis-Pouilly"
+        description:  |
+          - Spécialités : Mathématiques - Physique
+          - Mention bien - Section Européenne (Anglais) 
+
 
   - titre: "Expériences"
     icon: briefcase
@@ -29,7 +41,9 @@ langues:
   - langue: "Français"
     niveau: "Langue maternelle"
   - langue: "Anglais"
-    niveau: "B2"
+    niveau: "C1"
+  - langue: "Allemand"
+    niveau: "B1"
 
 outils: ["Onshape", "KiCad", "Python"]
 interets: ["Robotique", "Impression 3D"]

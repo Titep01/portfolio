@@ -67,7 +67,7 @@ permalink: /blog/:year/:month/:title/
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
+  syntax_highlighter: violet
 
 exclude:
   - README.md
