@@ -1,0 +1,35 @@
+# =====================================================================
+#  MON CV — affiché sur la page "Qui suis-je" (/about/)
+#  Supprime les blocs qui ne te concernent pas, ajoute-en autant que nécessaire.
+#  icon = nom d'icône Lucide : https://lucide.dev/icons/
+# =====================================================================
+
+# pdf: "/assets/cv/cv.pdf"    # dépose ton CV dans assets/cv/ puis décommente : un bouton « Télécharger mon CV » apparaît
+
+sections:
+  - titre: "Formation"
+    icon: graduation-cap
+    elements:
+      - periode: "2026 — aujourd'hui"
+        titre: "Cycle ingénieur — I1"
+        organisme: "UniLaSalle Amiens"
+        lieu: "Amiens"
+
+  - titre: "Expériences"
+    icon: briefcase
+    elements:
+      - periode: "Été 2026"
+        titre: "Stage ou job d'été"
+        organisme: "Entreprise"
+        description: |
+          - Mission principale
+          - Ce que j'ai appris
+
+langues:
+  - langue: "Français"
+    niveau: "Langue maternelle"
+  - langue: "Anglais"
+    niveau: "B2"
+
+outils: ["Onshape", "KiCad", "Python"]
+interets: ["Robotique", "Impression 3D"]

@@ -1,0 +1,77 @@
+# =====================================================================
+#  CONFIGURATION DE TON SITE — à personnaliser (partie 3 du guide)
+#  Guide : https://makerspace-amiens.fr/portfolio-theme/docs/guide-etudiant/
+#  ⚠️ Respecte l'indentation (2 espaces, jamais de tabulation).
+#  ⚠️ Après chaque modification de ce fichier, attends que GitHub
+#     reconstruise le site (onglet "Actions", ~1 min).
+# =====================================================================
+
+# --- Identité du site ------------------------------------------------
+title: "Prénom Nom"                       # nom affiché dans la barre du haut
+description: "Portfolio d'élève ingénieur·e — projets, documentation et journal de bord"
+lang: fr
+couleur: rouge                            # rouge, bleu, vert, violet, orange, turquoise, rose, gris
+                                          # ou un code entre guillemets : "#0057b8" (partie 10 du guide)
+
+# --- Adresse du site -------------------------------------------------
+# Cas 1 : ton dépôt s'appelle  pseudo.github.io  -> baseurl: ""
+# Cas 2 : ton dépôt s'appelle  portfolio         -> baseurl: "/portfolio"
+url: "https://pseudo.github.io"           # remplace "pseudo" par ton identifiant GitHub
+baseurl: ""
+
+# --- Toi ---------------------------------------------------------------
+author:
+  name: "Prénom Nom"
+  avatar: "/assets/images/avatar.svg"     # remplace par ta photo (carrée, ~400x400 px)
+  bio: "Élève ingénieur·e à UniLaSalle Amiens, passionné·e de prototypage."
+  formation: "I1 — UniLaSalle Amiens"
+  localisation: "Amiens"
+  links:                                  # icônes : https://lucide.dev/icons/
+    - label: "GitHub"
+      icon: "github"
+      url: "https://github.com/pseudo"
+    - label: "LinkedIn"
+      icon: "linkedin"
+      url: "https://www.linkedin.com/in/pseudo"
+    - label: "E-mail"
+      icon: "mail"
+      url: "mailto:prenom.nom@etu.unilasalle.fr"
+
+# --- Thème (ne pas modifier sauf consigne de l'enseignant) -------------
+remote_theme: Makerspace-Amiens/portfolio-theme@v26.11.16-02
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+
+# --- Contenus (ne pas modifier) ----------------------------------------
+collections:
+  projets:
+    output: true
+    permalink: /projets/:path/
+  docs:
+    output: true
+    permalink: /docs/:path/
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+  - scope: { path: "", type: projets }
+    values: { layout: projet }
+  - scope: { path: "", type: docs }
+    values: { layout: doc }
+  - scope: { path: "" }
+    values: { layout: page }
+
+permalink: /blog/:year/:month/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor

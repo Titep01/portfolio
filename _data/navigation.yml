@@ -1,0 +1,16 @@
+# Menu du haut. icon = nom d'icône Lucide (https://lucide.dev/icons/), optionnel.
+- title: "Accueil"
+  url: /
+  icon: house
+- title: "Projets"
+  url: /projets/
+  icon: layout-grid
+- title: "Blog"
+  url: /blog/
+  icon: newspaper
+- title: "Docs"
+  url: /docs/
+  icon: book-open
+- title: "Qui suis-je"
+  url: /about/
+  icon: user
